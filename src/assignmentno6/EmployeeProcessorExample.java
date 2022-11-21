@@ -14,7 +14,7 @@ public class EmployeeProcessorExample {
 		EmployeeProcessor empProcessor;
 		empProcessor = new SalaryOfEmployee();
 		 
-		 float SumofSalary = empProcessor.processEmployees(emp, "Analysis");
+		 float SumofSalary = empProcessor.processEmployees(emp, "Desgin");
 		 System.out.println("Sum of Salary of Department Mangement :"+SumofSalary);
 		 
 		 empProcessor =new EmployeeOfSameLocation();
