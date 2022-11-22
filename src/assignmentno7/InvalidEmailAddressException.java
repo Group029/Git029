@@ -1,10 +1,11 @@
 package assignmentno7;
 
 public class InvalidEmailAddressException extends Exception {
+	
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -6942001771396651497L;
+	private static final long serialVersionUID = 1L;
 	private String invalidEmail ;
 
 	public InvalidEmailAddressException(String errorMessage, String invaildEmail) {

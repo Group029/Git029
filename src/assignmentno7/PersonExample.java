@@ -3,6 +3,7 @@ package assignmentno7;
 public class PersonExample {
 
 	public static void main(String[] args){
+		@SuppressWarnings("unused")
 		Person p1 = new Person();
 		try {
 			p1=new Person("Aniket","02aniket1999@gmailcom",16);

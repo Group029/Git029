@@ -1,0 +1,24 @@
+package test;
+
+public class GreetingThread extends Thread {
+	private String greetingMessage;
+	private int delayTime;
+	public GreetingThread(String greetingMessage, int delayTime) {
+		this.greetingMessage = greetingMessage;
+		this.delayTime = delayTime;
+		
+	}
+	public void run() {
+		for(int a=1;a<=10;a++) {
+			System.out.println(greetingMessage);
+			//Introduce a time gap
+			try {
+				Thread.sleep(delayTime);//Sending the currently running thread into Sleeping State
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+	
+}

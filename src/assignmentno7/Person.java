@@ -7,7 +7,6 @@ public class Person {
 	private int age;
 	
 	public Person() {
-		super();
 	}
 	
 	public Person(String name, String emailAddress, int age)throws InvalidAgeException, InvalidEmailAddressException {
