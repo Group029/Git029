@@ -1,4 +1,4 @@
-package assigmentno8;
+package assignmentno8;
 
 import assignmentno8.AlphabetsAndAscii;
 
@@ -10,7 +10,7 @@ public class AlphabetsAndAsciiExample {
 		Runnable r2 =new AlphabetsAndAscii();
 		
 		Thread t1 = new Thread(r1,"alphabets");
-		Thread t2 = new Thread(r2,"Harshal");
+		Thread t2 = new Thread(r2,"number");
 		t1.start();
 		t2.start();
 	}

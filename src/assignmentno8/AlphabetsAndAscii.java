@@ -11,7 +11,7 @@ public class AlphabetsAndAscii implements Runnable {
 			if(name.equals("alphabets")) {
 				System.out.println(i);
 				try {
-					Thread.sleep(1000);
+					Thread.sleep(2000);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -21,7 +21,7 @@ public class AlphabetsAndAscii implements Runnable {
 				System.out.println((int)i);
 				 
 				try {
-					Thread.sleep(1000);
+					Thread.sleep(2000);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
