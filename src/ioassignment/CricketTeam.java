@@ -1,21 +1,24 @@
 package ioassignment;
 
-public class CricketTeam {
-	private String name;
+import java.io.Serializable;
+
+@SuppressWarnings("serial")
+public class CricketTeam implements Serializable {
+	private String teamName;
 	private int matchesPlayed;
 	private int mactchWon;
 	
 	
 	public CricketTeam() {
 		super();
-		name="a";
+		teamName="a";
 		matchesPlayed=5;
 		mactchWon=10;
 	}
 	
 	public CricketTeam(String name, int matchesPlayed, int mactchWon) {
 		super();
-		this.name = name;
+		this.teamName = name;
 		this.matchesPlayed = matchesPlayed;
 		this.mactchWon = mactchWon;
 	}
@@ -28,12 +31,12 @@ public class CricketTeam {
 		this.matchesPlayed = matchesPlayed;
 	}
 
-	public String getName() {
-		return name;
+	public String getTeamName() {
+		return teamName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setTeamName(String teamName) {
+		this.teamName = teamName;
 	}
 
 	public int getMactchWon() {
@@ -46,6 +49,6 @@ public class CricketTeam {
 
 	@Override
 	public String toString() {
-		return "CricketTeam [name=" + name + ", matchesPlayed=" + matchesPlayed + ", mactchWon=" + mactchWon + "]";
+		return "CricketTeam [Team name=" + teamName + ", matchesPlayed=" + matchesPlayed + ", mactchWon=" + mactchWon + "]";
 	}
 }
